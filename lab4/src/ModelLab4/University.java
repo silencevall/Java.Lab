@@ -1,28 +1,33 @@
-package ModelLab3;
+package ModelLab4;
 
 import java.util.List;
 import java.util.Objects;
 
 public class University {
-    private String universityName;
-    private Human head;
+    private String name;
+    private Human president;
     private List<Faculty> faculties;
 
     public String getName() {
-        return universityName;
+        return name;
     }
-    public void setName(String universityName) {
-        this.universityName = universityName;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public Human getHead() {
-        return head;
+
+    public Human getPresident() {
+        return president;
     }
-    public void setHead(Human head) {
-        this.head = head;
+
+    public void setPresident(Human president) {
+        this.president = president;
     }
+
     public List<Faculty> getFaculties() {
         return faculties;
     }
+
     public void setFaculties(List<Faculty> faculties) {
         this.faculties = faculties;
     }
@@ -30,8 +35,8 @@ public class University {
     @Override
     public String toString() {
         return "University{" +
-                "name='" + universityName + '\'' +
-                ", president=" + head +
+                "name='" + name + '\'' +
+                ", president=" + president +
                 ", faculties=" + faculties +
                 '}';
     }
@@ -41,13 +46,13 @@ public class University {
         if (this == o) return true;
         if (!(o instanceof University)) return false;
         University that = (University) o;
-        return Objects.equals(universityName, that.universityName) &&
-                Objects.equals(head, that.head) &&
+        return Objects.equals(name, that.name) &&
+                Objects.equals(president, that.president) &&
                 Objects.equals(faculties, that.faculties);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(universityName, head, faculties);
+        return Objects.hash(name, president, faculties);
     }
 }

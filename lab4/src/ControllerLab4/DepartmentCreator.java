@@ -1,11 +1,14 @@
-package ControllerLab3;
+package ControllerLab4;
 
-import ModelLab3.Group;
-import ModelLab3.Department;
+import ModelLab4.Group;
+import ModelLab4.Department;
+
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class DepartmentCreator {
+
 
     public Department createDepartment(int groupCount, int maxGroups) {
         Department department = new Department();
@@ -24,4 +27,3 @@ public class DepartmentCreator {
         return department;
     }
 }
-
