@@ -3,3 +3,4 @@ public class lab0 {
         System.out.println("Hello world!");
     }
 }
+
