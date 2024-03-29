@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="mssql-jdbc-12.6.1.jre11-sources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../mssql-jdbc-12.6.1.jre11.jar!/" />
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../mssql-jdbc-12.6.1.jre11-sources.jar!/" />
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>
